@@ -1,4 +1,4 @@
-package com.example.testtask.ui.main;
+package com.example.testtask.ui.reviews;
 
 import androidx.lifecycle.ViewModelProvider;
 
@@ -14,25 +14,25 @@ import android.view.ViewGroup;
 
 import com.example.testtask.R;
 
-public class MainFragment extends Fragment {
+public class ReviewsFragment extends Fragment {
 
-    private MainViewModel mViewModel;
+    private ReviesViewModel mViewModel;
 
-    public static MainFragment newInstance() {
-        return new MainFragment();
+    public static ReviewsFragment newInstance() {
+        return new ReviewsFragment();
     }
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.main_fragment, container, false);
+        return inflater.inflate(R.layout.review_fragment, container, false);
     }
 
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        mViewModel = new ViewModelProvider(this).get(MainViewModel.class);
+        mViewModel = new ViewModelProvider(this).get(ReviesViewModel.class);
         // TODO: Use the ViewModel
     }
 
